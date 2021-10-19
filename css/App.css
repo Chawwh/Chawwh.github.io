@@ -123,6 +123,7 @@ span {
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: 450px;
+  text-align: center;
 }
 
 .about-pic {
