@@ -72,6 +72,7 @@ header {
   display: grid;
   text-align: center;
   padding: 4rem;
+  overflow: hidden;
 }
 
 .meet {
@@ -94,44 +95,47 @@ span {
   margin-top: 2rem;
 }
 
-section {
-  padding: 4rem 2rem;
-  text-align: center;
-}
-
 .about-me {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  height: 400px;
+  height: 550px;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  width: 70%;
+  min-width: 1000px;
+  margin: auto;
 }
 
 #hiya {
-  position: absolute;
-  float: right;
-  right: 670px;
-  top: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-align: center;
 }
 
 .about-desc {
-  position: absolute;
-  float: right;
-  top: 250px;
-  right: 500px;
-  height: 400px;
-  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 450px;
 }
 
 .about-pic {
-  position: absolute;
-  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   height: 300px;
   width: 300px;
-  float: left;
-  left: 400px;
   z-index: -1;
+  top: 40%;
 }
 
 .featured {
@@ -260,7 +264,22 @@ input[type=submit]:hover {
   padding: 20px;
 }
 
+footer {
+  text-align: center;
+  font-size: small;
+}
+
 @media only screen and (min-width: 500px) {
+  .about-pic {
+    position: absolute;
+    float: left;
+    left: 3rem;
+  }
+  .about-desc {
+    position: relative;
+    float: right;
+    left: 18rem;
+  }
   .featured, .portfolio {
     text-align: left;
   }
@@ -305,8 +324,12 @@ input[type=submit]:hover {
 
 @media only screen and (min-width: 900px) {
   .hero {
-    height: 80vh;
-    width: 82.5%;
+    height: 90vh;
+    width: 85%;
+    margin-bottom: 2vh;
+  }
+  .hero .content {
+    height: 95%;
   }
   .nav-container {
     display: -ms-grid;
@@ -331,7 +354,7 @@ input[type=submit]:hover {
   .social-header {
     display: block;
     background: #353335;
-    height: 12px;
+    height: 14px;
   }
   .social-header ul {
     display: -webkit-box;
@@ -342,6 +365,48 @@ input[type=submit]:hover {
             justify-content: space-between;
     width: 20rem;
     float: right;
+  }
+  .about-me {
+    height: 400px;
+    display: -ms-grid;
+    display: grid;
+    place-content: center;
+    width: 70%;
+    min-width: 1000px;
+    margin: auto;
+  }
+  #hiya {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    text-align: center;
+    bottom: 30px;
+    margin: 4rem -3rem 3rem 2rem;
+  }
+  .about-desc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 450px;
+    bottom: 30%;
+  }
+  .about-pic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    height: 300px;
+    width: 300px;
+    z-index: -1;
+    top: 30%;
   }
   .featured {
     position: relative;
