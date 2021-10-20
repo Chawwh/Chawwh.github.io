@@ -85,6 +85,11 @@ span{
     margin-top: 2rem;
 }
 
+    #about-header{
+        text-align: center;
+        margin-top: 5%;
+        place-content: center;
+    }
 
     .about-me{
         height: 550px;  
@@ -92,7 +97,7 @@ span{
         place-content: center;
         width: 70%;
         min-width: 1000px;
-        margin: auto;
+        // margin: auto;
     }
     #hiya{
         display: flex;
@@ -152,39 +157,25 @@ span{
 .skills{
     background:none;
 }
+.skill-head{
+    text-align: center;
+}
 
 .skills-container ul li {
     background: white;
     padding: 3rem;
     border-radius: 1rem;
     margin-bottom: 1rem;
+    text-align: center;
+
 
     .icon-container{
         height: 75px;
         display: grid;
         place-content: center;
         margin: 0 auto;
+        width: 70px;
 
-        &.one{
-             width:  50px;
-          }
-
-          &.two{
-             width: 100px;
-          }
-
-          &.three{
-            width: 60px;
-          }
-          &.four{
-              width: 50px;
-          }
-          &.five{
-              width: 100px;
-          }
-          &.six{
-              width: 60px;
-          }
     }
 
     .skill-title{
@@ -197,6 +188,11 @@ span{
 
 .portfolio{
     background: #25cce6;
+    
+}
+.port-head{
+    text-align: center;
+    
 }
 
 .portfolio-container a img{
@@ -235,8 +231,18 @@ background-color:#4343a7 ;
 }
 
 footer{
-    text-align: center;
     font-size: small;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 0 40rem 0 40rem;
+
+
+    .foot{
+        margin-top: 36%;
+        height: 30px;
+        width: 30px;
+    }
 }
 
 @media only screen and (min-width: 500px) {
@@ -254,7 +260,7 @@ footer{
     }
 
     .featured, .portfolio {
-        text-align: left;
+        text-align: center;
     }
 
     .featured, .portfolio-container {
@@ -283,7 +289,7 @@ footer{
         grid-gap: 1rem;
     }
     .portfolio{
-        padding:top 7rem;
+        padding:top 7rem; 
     }
 
     .portfolio-container{
@@ -292,6 +298,16 @@ footer{
     .p-img{
         float:right;
     }
+    .lang{
+        background-color: aliceblue;
+        padding: 6px;
+        border-radius: .5rem;
+        margin-bottom: 2px;
+        align-items: center;
+        width: fit-content;
+        
+    }
+
 }
 
 @media only screen and (min-width: 900px) {
@@ -350,7 +366,7 @@ footer{
         justify-content: flex-end;
         text-align: center;
         bottom: 30px;
-        margin: 4rem -3rem 3rem 2rem;
+        margin: 0 -7rem 5rem 2rem;
     }
     .about-desc{
         display: flex;
@@ -364,23 +380,12 @@ footer{
         display: flex;
         justify-content: flex-start;
         height: 300px;
-        width: 300px;
+        width: 450px;
         z-index: -1;
         top: 30%;
-        
+        left: 10rem;
     }
-// .about-pic{
-//     position: absolute;
-//     float: left;
-//     left: 3rem;
-// }
 
-// .about-desc{
-//     position: relative;
-//     float: right;
-//     right: 3rem;
-    
-// }
     .featured{
         position:relative;
     }
@@ -436,6 +441,10 @@ footer{
     .hero-content{
         padding: 6rem 8rem 6rem 10rem;
     }
+}
+#foot{
+    height: 30px;
+    width: 30px;
 }
 
 
