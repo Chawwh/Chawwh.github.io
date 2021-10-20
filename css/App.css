@@ -95,6 +95,12 @@ span {
   margin-top: 2rem;
 }
 
+#about-header {
+  text-align: center;
+  margin-top: 5%;
+  place-content: center;
+}
+
 .about-me {
   height: 550px;
   display: -ms-grid;
@@ -102,7 +108,6 @@ span {
   place-content: center;
   width: 70%;
   min-width: 1000px;
-  margin: auto;
 }
 
 #hiya {
@@ -176,11 +181,16 @@ span {
   background: none;
 }
 
+.skill-head {
+  text-align: center;
+}
+
 .skills-container ul li {
   background: white;
   padding: 3rem;
   border-radius: 1rem;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .skills-container ul li .icon-container {
@@ -189,30 +199,7 @@ span {
   display: grid;
   place-content: center;
   margin: 0 auto;
-}
-
-.skills-container ul li .icon-container.one {
-  width: 50px;
-}
-
-.skills-container ul li .icon-container.two {
-  width: 100px;
-}
-
-.skills-container ul li .icon-container.three {
-  width: 60px;
-}
-
-.skills-container ul li .icon-container.four {
-  width: 50px;
-}
-
-.skills-container ul li .icon-container.five {
-  width: 100px;
-}
-
-.skills-container ul li .icon-container.six {
-  width: 60px;
+  width: 70px;
 }
 
 .skills-container ul li .skill-title {
@@ -225,6 +212,10 @@ span {
 
 .portfolio {
   background: #25cce6;
+}
+
+.port-head {
+  text-align: center;
 }
 
 .portfolio-container a img {
@@ -266,8 +257,23 @@ input[type=submit]:hover {
 }
 
 footer {
-  text-align: center;
   font-size: small;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 40rem 0 40rem;
+}
+
+footer .foot {
+  margin-top: 36%;
+  height: 30px;
+  width: 30px;
 }
 
 @media only screen and (min-width: 500px) {
@@ -282,7 +288,7 @@ footer {
     left: 18rem;
   }
   .featured, .portfolio {
-    text-align: left;
+    text-align: center;
   }
   .featured, .portfolio-container {
     display: -ms-grid;
@@ -320,6 +326,18 @@ footer {
   }
   .p-img {
     float: right;
+  }
+  .lang {
+    background-color: aliceblue;
+    padding: 6px;
+    border-radius: .5rem;
+    margin-bottom: 2px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
 }
 
@@ -385,7 +403,7 @@ footer {
             justify-content: flex-end;
     text-align: center;
     bottom: 30px;
-    margin: 4rem -3rem 3rem 2rem;
+    margin: 0 -7rem 5rem 2rem;
   }
   .about-desc {
     display: -webkit-box;
@@ -406,9 +424,10 @@ footer {
         -ms-flex-pack: start;
             justify-content: flex-start;
     height: 300px;
-    width: 300px;
+    width: 450px;
     z-index: -1;
     top: 30%;
+    left: 10rem;
   }
   .featured {
     position: relative;
@@ -462,6 +481,11 @@ footer {
   .hero-content {
     padding: 6rem 8rem 6rem 10rem;
   }
+}
+
+#foot {
+  height: 30px;
+  width: 30px;
 }
 
 .circle {
